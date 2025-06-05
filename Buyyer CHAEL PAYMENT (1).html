@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CHAEL PAYMENT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #f0f2f5, #e0e7ff);
+      color: #333;
+      padding: 20px;
+      animation: fadeIn 1s ease-in;
+      
+  background-image: url('https://img1.pixhost.to/images/6249/607393891_skyzopedia.jpg');
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #4F46E5;
+    }
+    .logo {
+      text-align: center;
+    }
+    .logo img {
+      max-width: 100px;
+    }
+    .video {
+      margin: 20px 0;
+      text-align: center;
+    }
+    .video iframe {
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+      border: none;
+    }
+    .image {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .image img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .payment-section {
+      margin-bottom: 20px;
+    }
+    .payment-item {
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    button.copy {
+      background: #4F46E5;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button.copy:hover {
+      background: #3730a3;
+    }
+    .social-links a {
+      display: block;
+      margin: 5px 0;
+      color: #4F46E5;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+    <h1>CHAEL PAYMENT</h1>
+    
+    <div class="image">
+      <img src="https://img1.pixhost.to/images/6249/607393891_skyzopedia.jpg" alt="Tema">
+    </div>
+
+    <div class="payment-section">
+      <h2>Metode Pembayaran</h2>
+      <div class="payment-item">
+        <span>DANA: 083865078427</span>
+        <button class="copy" onclick="copyText('083865078427')">Salin</button>
+      </div>
+      <div class="payment-item">
+        <span>OVO: -</span>
+        <button class="copy" onclick="copyText('-')">Salin</button>
+      </div>
+      <div class="payment-item">
+        <span>GoPay: 083865078427</span>
+        <button class="copy" onclick="copyText('083865078427')">Salin</button>
+      </div>
+
+      <div class="payment-item">
+        <span>QRIS</span>
+        <a href="https://img1.pixhost.to/images/6248/607382259_skyzopedia.jpg" target="_blank" class="copy">Lihat QRIS</a>
+      </div>
+    </div>
+    
+      <a href="https://wa.me/6282164872864" target="_blank">WhatsApp:6282164872864</a>
+    </div>
+  </div>
+
+  <script>
+    function copyText(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Disalin: ' + text);
+      });
+    }
+  </script>
+</body>
+</html>
